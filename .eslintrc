@@ -1,11 +1,19 @@
 {
-  "extends": ["airbnb", "airbnb-typescript", "prettier/react", "prettier"],
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "prettier/react",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "prettier"
+  ],
   "plugins": [
     "react",
     "prettier",
     "react-hooks",
     "@typescript-eslint",
-    "import"
+    "import",
+    "jsx-a11y"
   ],
   "parser": "@typescript-eslint/parser",
   "env": {

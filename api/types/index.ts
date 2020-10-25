@@ -12,3 +12,11 @@ export type RegistrationPayload = {
   first_name: string;
   last_name: string;
 };
+
+export type ErrorType = {
+  error: boolean;
+  status: number | undefined;
+  data: any;
+};
+
+export type ApiResponseType<T> = Promise<T | ErrorType>;

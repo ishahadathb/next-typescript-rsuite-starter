@@ -3,7 +3,10 @@ export function getItem(key: string): string | null {
   return data ? JSON.stringify(data) : data;
 }
 
-export function setItem(key: string, data: string | [] | object) {
+export function setItem(
+  key: string,
+  data: string | [] | Record<string, any>
+): void {
   const dat = JSON.stringify(data);
   window.localStorage.setItem(key, dat);
 }
